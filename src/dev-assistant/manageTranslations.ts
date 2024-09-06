@@ -11,11 +11,11 @@ const actions = {
     DELETE: 'DELETE',
 };
 const i18n: any = {
-    path: 'project.wizardSteps.requestOptions.groups.resources.fields.resourcesInjection.description',
+    path: 'hero.title',
     value: {
-        de: 'Fügen Sie Ressourcen (CSS oder JS) in jede Seite ein.',
-        en: 'Insert resources (CSS or JS) into any page.',
-        fr: 'Insérez des ressources (CSS ou JS) dans n\'importe quelle page.',
+        de: ' - Ihr Partner für mühelose Automatisierung von Prozessen auf Websites mit KI-Unterstützung.',
+        en: ' - Your partner for effortless automation of processes on websites with AI support.',
+        fr: ' - Votre partenaire pour l\'automatisation sans effort des processus sur les sites Web avec le support de l\'IA.',
     },
     action: actions.UPDATE,
 };
