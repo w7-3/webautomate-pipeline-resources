@@ -1,0 +1,18 @@
+{
+  "name": "webautomate-pipeline-resources",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:w7-3/webautomate-pipeline-resources.git",
+  "author": "Francis <francis0006@yahoo.de>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^22.5.4",
+    "ramda": "^0.30.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run:manage:translations": "ts-node src/dev-assistant/manageTranslations.ts"
+  }
+}

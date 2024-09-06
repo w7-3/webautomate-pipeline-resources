@@ -1,0 +1,13 @@
+# IDE
+.idea
+
+# npm
+node_modules
+
+# build
+output
+coverage
+dist
+
+# .env
+.env
