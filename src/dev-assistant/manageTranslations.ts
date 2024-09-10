@@ -11,13 +11,13 @@ const actions = {
     DELETE: 'DELETE',
 };
 const i18n: any = {
-    path: 'accountNotifications.types.custom', // Messages sent to accounts by webautomate.app management
+    path: 'scroll.bottom',
     value: {
-        de: 'Webautomate.app Benachrichtigung',
-        en: 'Webautomate.app Notification',
-        fr: 'Notification Webautomate.app',
+        de: 'Nach unten',
+        en: 'Downwards',
+        fr: 'Vers le bas',
     },
-    action: actions.INSERT,
+    action: actions.UPDATE,
 };
 
 (async () => {
