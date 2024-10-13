@@ -6,7 +6,7 @@ import rAssocPath from 'ramda/src/assocPath';
 
 const rootFolder = '/Users/francis/work/webeagle-resources/src/i18n/locales/';
 const actions = {
-    INSERT: 'INSERT',
+    CREATE: 'CREATE',
     UPDATE: 'UPDATE',
     DELETE: 'DELETE',
 };
@@ -15,15 +15,7 @@ const actions = {
     await Promise.all(configs.map(async (i18n) => {
         await Promise.all(Object.keys(i18n.value).map(async (lang) => {
             if ([
-                actions.INSERT,
-                actions.UPDATE,
-            ].includes(i18n.action) && !i18n.value[lang]) {
-                throw new Error(`Value for locale ${lang} not found.`);
-            }
-        }));
-        await Promise.all(Object.keys(i18n.value).map(async (lang) => {
-            if ([
-                actions.INSERT,
+                actions.CREATE,
                 actions.UPDATE,
             ].includes(i18n.action) && !i18n.value[lang]) {
                 throw new Error(`Value for locale ${lang} not found.`);
@@ -36,14 +28,14 @@ const actions = {
             const value = rPath(propPath, module.default);
 
             if (i18n.action === actions.UPDATE && typeof value === 'undefined') {
-                throw new Error(`Key in path "${i18n.path}" for locale ${lang} does not exist, use ${actions.INSERT} instead.`);
+                throw new Error(`Key in path "${i18n.path}" for locale ${lang} does not exist, use ${actions.CREATE} instead.`);
             }
 
             if (i18n.action === actions.UPDATE && typeof value !== typeof i18n.value[lang]) {
                 throw new Error(`Value type of "${i18n.path}" for locale ${lang} do not match`);
             }
 
-            if (i18n.action === actions.INSERT && Boolean(value)) {
+            if (i18n.action === actions.CREATE && Boolean(value)) {
                 throw new Error(`Value already exists in "${i18n.path}", use ${actions.UPDATE} instead.`);
             }
 
@@ -71,11 +63,11 @@ const actions = {
         }));
     }));
 })([{
-    path: 'events.EVENT_PROJECT_BUILD_FINISHED',
+    path: 'directives.notifications.projectUpdateVoid',
     value: {
-        de: 'Projekt fertiggestellt - Status: {{state}}',
-        en: 'Project build finished - Status: {{state}}',
-        fr: 'Construction du projet terminée - Statut: {{state}}',
+        de: '',
+        en: '',
+        fr: '',
     },
-    action: actions.UPDATE,
+    action: actions.CREATE,
 }]);

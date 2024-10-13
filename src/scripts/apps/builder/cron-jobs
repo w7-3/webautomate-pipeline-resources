@@ -1,2 +1,0 @@
-#
-*/5 * * * * /Users/francis/work/webautomate-pipeline-resources/scripts/apps/builder/start-worker.sh >> /Users/francis/work/webautomate-pipeline-resources/webautomate/builder.log 2>&1
