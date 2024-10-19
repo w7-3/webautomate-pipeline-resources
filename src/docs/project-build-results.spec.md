@@ -35,7 +35,7 @@ The project detail page is made up of the following elements:
 
 The project detail page also contains the following tabs:
 
-- Overview: displays an overview of the project:
+- DashboardOverviewPage: displays an overview of the project:
   - A table of all the builds of the project
   - Auto Scheduler (if enabled)
   - Project solution type

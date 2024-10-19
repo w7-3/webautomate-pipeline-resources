@@ -63,11 +63,122 @@ const actions = {
         }));
     }));
 })([{
-    path: 'directives.notifications.projectUpdateVoid',
+    path: 'project.build.states',
     value: {
-        de: '',
-        en: '',
-        fr: '',
+        de: {
+            none: {
+                label: 'Ausstehend',
+                description: 'Der Projekt-Lauf steht aus',
+            },
+            timeout: {
+                label: 'Zeitüberschreitung',
+                description: 'Der Projekt-Lauf hat eine Zeitüberschreitung',
+            },
+            running: {
+                label: 'Läuft',
+                description: 'Der Projekt-Lauf läuft',
+            },
+            queue: {
+                label: 'In Warteschlange',
+                description: 'Der Projekt-Lauf steht in der Warteschlange',
+            },
+            cancel: {
+                label: 'Abgebrochen',
+                description: 'Der Projekt-Lauf wurde abgebrochen',
+            },
+            success: {
+                label: 'Erfolgreich',
+                description: 'Der Projekt-Lauf war erfolgreich',
+            },
+            failure: {
+                label: 'Fehlgeschlagen',
+                description: 'Der Projekt-Lauf ist fehlgeschlagen',
+            },
+            mixed: {
+                label: 'Gemischt',
+                description: 'Der Projekt-Lauf hat gemischte Ergebnisse',
+            },
+            undefined: {
+                label: 'Unbekannt',
+                description: 'Der Projekt-Lauf hat einen unbekannten Status',
+            },
+        },
+        en: {
+            none: {
+                label: 'Pending',
+                description: 'The Project-Run is pending',
+            },
+            timeout: {
+                label: 'Timed out',
+                description: 'The Project-Run timed out',
+            },
+            running: {
+                label: 'Running',
+                description: 'The Project-Run is running',
+            },
+            queue: {
+                label: 'Queued',
+                description: 'The Project-Run is queued',
+            },
+            cancel: {
+                label: 'Cancelled',
+                description: 'The Project-Run was cancelled',
+            },
+            success: {
+                label: 'Successful',
+                description: 'The Project-Run was successful',
+            },
+            failure: {
+                label: 'Failed',
+                description: 'The Project-Run failed',
+            },
+            mixed: {
+                label: 'Mixed',
+                description: 'The Project-Run has mixed results',
+            },
+            undefined: {
+                label: 'Unknown',
+                description: 'The Project-Run has an unknown state',
+            },
+        },
+        fr: {
+            none: {
+                label: 'En attente',
+                description: 'Le projet est en attente',
+            },
+            timeout: {
+                label: 'Temps écoulé',
+                description: 'Le projet a dépassé le temps imparti',
+            },
+            running: {
+                label: 'En cours',
+                description: 'Le projet est en cours',
+            },
+            queue: {
+                label: 'En file d\'attente',
+                description: 'Le projet est en file d\'attente',
+            },
+            cancel: {
+                label: 'Annulé',
+                description: 'Le projet a été annulé',
+            },
+            success: {
+                label: 'Réussi',
+                description: 'Le projet a réussi',
+            },
+            failure: {
+                label: 'Échec',
+                description: 'Le projet a échoué',
+            },
+            mixed: {
+                label: 'Mixte',
+                description: 'Le projet a des résultats mixtes',
+            },
+            undefined: {
+                label: 'Inconnu',
+                description: 'Le projet a un état inconnu',
+            }
+        },
     },
     action: actions.CREATE,
 }]);

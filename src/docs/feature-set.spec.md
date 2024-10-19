@@ -20,7 +20,7 @@ The standard layout of the application consists of the following sections:
     - Resources: when hovered over, it will show a dropdown menu with all available resources. Clicking on a resource will take you to the resource page.
     - Shop: nothing happens when hovered over, but clicking on it will take you to the shop page, where you can purchase subscriptions and other products.
     - The User-Icon: nothing happens when hovered over, but clicking on it will take show a dropdown menu with the following options:
-        - Login: if not logged in, clicking on it will take you to the login page.
+        - LoginPage: if not logged in, clicking on it will take you to the login page.
         - Create Account: if not logged in, clicking on it will take you to the registration page.
         - Settings: clicking on it will show a modal with the user settings. The following options are available:
             - Your Preferred Language: allows you to select your preferred language.
@@ -74,7 +74,7 @@ To be able to consume the services of the application, you need to create an acc
 Accounts are free to create. After filling in the required information, click on the "Create Account" button to create your account.
 In Version "v1.0.0" of the application, accounts can only be created using email and password. Social media login and login via platforms like Github will be added in future versions.
 
-### Account Login
+### Account LoginPage
 
 If you already have an account, you can log in to the application using your email and password. The account login page contains the following items:
 
@@ -82,8 +82,8 @@ If you already have an account, you can log in to the application using your ema
 - Password: enter your password
 - Forgot Password: clicking on it will take you to the forgot password page, where you can reset your password
 
-After filling in the required information, click on the "Login" button to log in to your account.
-Login takes you to the account dashboard, where you can view and manage your account information.
+After filling in the required information, click on the "LoginPage" button to log in to your account.
+LoginPage takes you to the account dashboard, where you can view and manage your account information.
 
 ### Account Dashboard
 
@@ -107,7 +107,7 @@ The header contains the following items:
   - Link to the documentation: clicking on it will take you to the documentation page, where you can find detailed information on how to use the application
 - Language Switcher: allows you to switch between different languages. Clicking on a language will change the language of the application
 - Notifications Popover: displays the latest notifications, such as new features, pending requests, updates, and promotions
-- User Profile: clicking on it will show a dropdown menu with the following options:
+- User ProfilePage: clicking on it will show a dropdown menu with the following options:
   - Dashboard: clicking on it will take you to the account page, where you can view and edit your account information
   - Projects: clicking on it will take you to the projects page, where you can view and manage your projects
   - Settings: clicking on it will take you to the settings page, where you can view and edit your account settings
