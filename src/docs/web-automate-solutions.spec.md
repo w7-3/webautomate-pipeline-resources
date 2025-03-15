@@ -15,6 +15,12 @@ Compare visual elements across different pages and sessions to ensure consistenc
 ## Screenshot Documentation
 Easily capture screenshots of your web pages to document their current state. A useful tool for troubleshooting and documenting design versions.
 
+### Element capturing
+Capture specific elements on your web pages to document their appearance and behavior. A powerful tool for analyzing and documenting design elements.
+
+Technical Information
+Element undergoing animation or transformation may not be captured correctly. To mitigate this, we shortly pause all animations or transformations on the page before capturing the element.
+
 ## Video Documentation
 Document the state of your website with video recordings. A powerful tool for analyzing user behavior and troubleshooting issues.
 

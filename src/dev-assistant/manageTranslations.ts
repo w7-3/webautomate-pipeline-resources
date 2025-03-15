@@ -7,8 +7,8 @@ import rAssocPath from 'ramda/src/assocPath';
 const rootFolder = '/Users/francis/work/webeagle-resources/src/i18n/locales/';
 const actions = {
     CREATE: 'CREATE',
-    UPDATE: 'UPDATE',
     DELETE: 'DELETE',
+    UPDATE: 'UPDATE',
 };
 
 (async (configs) => {
@@ -59,24 +59,17 @@ const actions = {
             )};`;
 
             fs.writeFileSync(`${modulePath}.ts`, updatedContent, 'utf-8');
-            // fs.writeFileSync(`${modulePath}.json`, JSON.stringify(module.default, null, 4), 'utf-8');
         }));
     }));
-})([{
-    path: 'project.build.states.terminated',
-    value: {
-        de: {
-            label: 'Abgebrochen',
-            description: 'Der Build wurde vom System abgebrochen.',
+    // sendProjectBuildSkippedDueToOverageEmail.ts
+})([
+    {
+        path: 'workflowSteps.showInactiveItems',
+        value: {
+            de: 'Inaktive anzeigen',
+            en: 'Show inactive',
+            fr: 'Afficher les inactifs',
         },
-        en: {
-            label: 'Terminated',
-            description: 'The build has been terminated by the system.',
-        },
-        fr: {
-            label: 'Terminé',
-            description: 'La construction a été terminée par le système.',
-        },
+        action: actions.CREATE,
     },
-    action: actions.CREATE,
-}]);
+]);

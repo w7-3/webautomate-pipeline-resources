@@ -22,3 +22,20 @@ There are 2 kinds of extra packages available for purchase:
     
 * Automation Credits: These are credits that can be used to run automations.
 * Seats for Collaborators: These are seats that can be assigned to collaborators to work on projects. The seats can be assigned to different users, and each seat has a different price.
+
+### 2.1. Automation Credits
+
+Each automation consumes a certain number of credits based on the complexity of the automation. Users can purchase automation credits in bulk, and they can use these credits to run automations.
+
+Currently the following packages are available:
+
+- 1000 credits (1k credits) with a validity of 30 days
+- 12000 credits (12k credits) with a validity of 90 days
+- 75000 credits (75k credits) with a validity of 180 days
+- 200000 credits (200k credits) with a validity of 360 days
+
+
+
+### 2.2. Seats for Collaborators
+
+Users can purchase seats for collaborators to work on projects. Users can assign these seats arbitrarily to different collaborators.
