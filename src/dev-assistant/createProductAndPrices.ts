@@ -5,7 +5,7 @@ import * as premiumPackage from '@w7-3/webeagle-resources/dist/config/catalog/su
 import collaborators from '@w7-3/webeagle-resources/dist/config/catalog/collaborators';
 import credits from '@w7-3/webeagle-resources/dist/config/catalog/credits';
 
-const stripe = new Stripe('sk_test_51QwQujQmpu7UZVlaz698o4vyTKGEPu0mOFLPOJIdvJeScQOjYBXthEV4asKp06nDekn0STsoc2rDYRLaWwLohYzP00FGF3GO8R', {
+const stripe = new Stripe(process.env.WEBAUTOMATE_STRIPE_KEY, {
     apiVersion: '2023-10-16',
 });
 

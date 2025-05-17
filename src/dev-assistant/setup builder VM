@@ -1,0 +1,77 @@
+SSH into VM (or use SSH in browser)
+
+	gcloud compute ssh --zone "europe-west6-a" "webautomate-builder-v-poc-stage-20240802-151043" --project "webautomate-core-infra-prod"
+
+
+Setting up new VM (recommending SSH in Browser)
+
+	0. Switch to admin and goto admin hime directory
+
+		$ sudo su
+		$ cd ~
+
+	1. Update apt-get
+
+		$ sudo apt-get update
+
+	2. Install nvm
+
+		$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+		$ echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.bashrc
+		$ echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >> ~/.bashrc
+		$ source ~/.bashrc
+
+	3. Install Git
+
+		$ sudo apt-get install git
+
+	4. Install yarn
+
+		$ npm install -g yarn
+
+	5: Install lsof
+
+		$ apt-get install lsof
+
+	6. Install NPM (if not already installed by node above
+
+		$ npm install -g npm@10.8.1
+
+	7. Make apps directory
+
+		$ cd ~
+		$ mkdir apps
+
+	8. Checkout webeagle-api Repo
+
+		* Create SSH keys and upload public key in github, if not already available
+		* Check, if agent is running `eval "$(ssh-agent -s)"`, if not then start `ssh-add {{private key}}`
+		* `git clone git@github.com:w7-3/webeagle-api.git` (or `git fetch` and git checkout `tags/{{tag}}`)
+
+	9. Connect stdout to gcp logging
+
+		* curl -sSO https://dl.google.com/cloudagents/add-google-cloud-ops-agent-repo.sh // add
+		* sudo bash add-google-cloud-ops-agent-repo.sh --also-install // install
+		* sudo systemctl status google-cloud-ops-agent // check, if correct
+
+
+	10. Set up repo and install dependencis
+
+		$ `cd webeagle-api`
+		$ `yarn` // to install all dependencies
+		$ `sudo apt install coreutils` // install core utils, if necessary
+		$ `timeout 5s echo "hello"` // test if timeout works (this is used in all deploy jobs)
+		$ `yarn playwright install` // will install or update browsers, if necessary
+		$ `yarn playwright install-deps` // will update some env based bindings, if necessary
+		$ `sudo apt install xauth` // install xauth, which is used by xvfb to set up access control for the virtual X server session
+
+		9.1 Build
+			apps: account-auditor, billing-manager, billings, notifications, payments, runner-manager, runners, subscriptions
+			environments: dev, stage, production
+
+			$ WEB_AUTOMATE_ENV={{environment}} WEB_AUTOMATE_APP={{app}} bash scripts/jobs/local-build-app.sh
+
+		9.2 Deploy
+			target: DEV, STAGE or PROD
+
+			$ WEB_AUTOMATE_ENV={{environment}} WEB_AUTOMATE_APP={{app}} bash scripts/jobs/envs/local-deploy-app--(DEV, STAGE or PROD).sh

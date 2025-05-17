@@ -4,7 +4,7 @@
 
 ## When to execute
 
-1. Every 2 mins
+1. Every 5 mins
 
 ## When not to execute
 

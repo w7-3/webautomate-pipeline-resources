@@ -238,7 +238,7 @@ A URL-Challenge can either be executed in 2 modes:
 Elimination mode: Each URL is subjected to the tests. If a URL fails a test, it is eliminated and not tested further. The test cycle ends when all URLs have either passed all tests or been eliminated.
 Comprehensive Mode: Each URL undergoes all defined tests regardless of whether it passes a test or not.
 
-##### 5.1.1 URL Challenge Step
+##### 5.1.1 URL-Challenge Step
 
 A URL-Challenge can either be AI-Powered or specified with javascript.
 

@@ -12,17 +12,20 @@ const actions = {
 };
 
 (async (configs) => {
-    await Promise.all(configs.map(async (i18n) => {
-        await Promise.all(Object.keys(i18n.value).map(async (lang) => {
+    await Promise.all(configs.map(async (i18n: any) => {
+        const languages = i18n.action === actions.DELETE ?
+            ['de', 'en', 'fr'] :
+            Object.keys(i18n.value);
+        await Promise.all(languages.map(async (lang) => {
             if ([
                 actions.CREATE,
                 actions.UPDATE,
             ].includes(i18n.action) && !i18n.value[lang]) {
-                throw new Error(`Value for locale ${lang} not found.`);
+                throw new Error(`Value must be specified for language: ${lang}`);
             }
         }));
         const propPath = i18n.path.split('.');
-        await Promise.all(Object.keys(i18n.value).map(async (lang) => {
+        await Promise.all(languages.map(async (lang) => {
             const modulePath = path.resolve(__dirname, `${rootFolder}${lang}/index`);
             const module = await import(modulePath);
             const value = rPath(propPath, module.default);
@@ -64,12 +67,12 @@ const actions = {
     // sendProjectBuildSkippedDueToOverageEmail.ts
 })([
     {
-        path: 'workflowSteps.showInactiveItems',
+        path: 'events.STEP_LOOP_BROKEN',
         value: {
-            de: 'Inaktive anzeigen',
-            en: 'Show inactive',
-            fr: 'Afficher les inactifs',
+            en: 'Loop in step "{{label}}" stopped at iteration {{position}}.',
+            de: 'Die Schleife im Schritt "{{label}}" wurde bei der Iteration {{position}} gestoppt.',
+            fr: 'La boucle dans l\'étape "{{label}}" s\'est arrêtée à l\'itération {{position}}.',
         },
-        action: actions.CREATE,
+        action: actions.UPDATE,
     },
 ]);

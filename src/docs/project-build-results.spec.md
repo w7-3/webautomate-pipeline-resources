@@ -65,7 +65,7 @@ Back to the project overview tab. Clicking on a build row will open a summary of
   - Number of URLs with errors
   
 - Project solution specific information, which can vary depending on the solution type.
-  - For URL Challenge
+  - For URL-Challenge
     - Number of Challenges processed
     - Number of Challenges successfully processed
     - Number of Challenges with errors

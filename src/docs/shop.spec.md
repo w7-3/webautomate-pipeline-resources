@@ -5,7 +5,7 @@ The shop is where users can purchase subscriptions and other products. The shop 
 - The subscription plans are displayed in a grid layout, with each plan showing the following information:
     - Plan Name: the name of the plan
     - Plan Price: the price of the plan
-    - Plan Features: a list of features included in the plan
+    - Plan FeaturesPage: a list of features included in the plan
     - Buy Now Button: clicking on it will take you to the checkout page, where you can purchase the plan
 - The plans are divided into different categories, such as Starter, Advanced, and Premium
 - The plans can be monthly, quarterly, bi-annually, or annually

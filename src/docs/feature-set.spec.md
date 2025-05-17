@@ -1,6 +1,6 @@
 In this document, you will find a detailed description of the feature set of the application. The feature set is a list of features that the application provides to the user. The feature set is a key component of the application design and development process, as it defines the functionality of the application and guides the development team in implementing the features.
 
-## Features by Section
+## FeaturesPage by Section
 
 There are multiple layouts in the application, each with its own set of features. The following sections describe the features of each layout.
 The standard layout of the application consists of the following sections:
@@ -58,7 +58,7 @@ Depending on the page you are on, the main content will display different inform
     - Social Media Icons: clicking on them will take you to the social media pages of the application, where you can follow the application and stay updated on the latest news and updates.
     - Copyright: displays the copyright information of the application.
 
-## Features by Page
+## FeaturesPage by Page
 
 The application consists of multiple pages, each with its own set of features. The following sections describe the features of each page.
 
