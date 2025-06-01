@@ -67,12 +67,12 @@ const actions = {
     // sendProjectBuildSkippedDueToOverageEmail.ts
 })([
     {
-        path: 'events.STEP_LOOP_BROKEN',
+        path: 'events.AI_SERVICE_FAILED',
         value: {
-            en: 'Loop in step "{{label}}" stopped at iteration {{position}}.',
-            de: 'Die Schleife im Schritt "{{label}}" wurde bei der Iteration {{position}} gestoppt.',
-            fr: 'La boucle dans l\'étape "{{label}}" s\'est arrêtée à l\'itération {{position}}.',
+            en: 'AI service is not available',
+            de: 'Der AI-Dienst ist nicht verfügbar',
+            fr: 'Le service d\'IA a échoué',
         },
-        action: actions.UPDATE,
-    },
+        action: actions.CREATE,
+    }
 ]);

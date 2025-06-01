@@ -10,9 +10,9 @@ We implement ethical control in the following forms:
 
 All the methods are due for revalidation after 12 months. The revalidation either happens manually, when running an automation on any given URL or can also be done manually by the user from the account page.
 
-Domain verification has 2 states, namely:
+Domain verification has two states, namely:
 
 * Verified: means the user has proved their domain ownership, which means that no ethical control will be applied in the next 12 months.
 * Pending: means the user has applied for a proof of ownership, but the conditions are not yet met.
 
-After a successful domain verification, a record is kept for the user. Users have the option of revoking the ownership, which means the record gets deleted and the URLs of the domain have to pass through ethical control and every other restriction applied to foreign domains.  
+After successful domain verification, a record is kept for the user. Users have the option of revoking the ownership, which means the record gets deleted, and the URLs of the domain have to pass through ethical control and every other restriction applied to foreign domains.  

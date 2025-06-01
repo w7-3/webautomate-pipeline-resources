@@ -82,7 +82,7 @@ Here are the list of tags and attributes considered:
 * Link-Tag: Attribute "href"
 * Object-Tag: Attribute "data"
 * Script-Tag: Attribute "src"
-* Source-Tag: Attributes "src", "srcset"
+* Source-Tag: Attributes "src" "srcset"
 
 #### 3.2 Normalize URLs (Handling similar URLs)
 
@@ -180,9 +180,9 @@ Here, the user has the following options, configurable in their own sub-tabs:
   * Content-Type: Set the content type of the simulated response.
   * Response Data: The response body can be specified as text or JSON.
 
-  // Note: In the UI, A preview of the mocked requests are displayed in a table with a button below the table "+ HTTP Mock", which the user clicks to display the setup form.
+  // Note: In the UI, A preview of the mocked requests is displayed in a table with a button below the table "+ HTTP Mock" which the user clicks to display the setup form.
 
-* Modify HTTP Requests - You can change the headers and body (also parameters) of HTTP requests before they are sent. The user has the following options, when capturing a request modification:
+* Modify HTTP Requests. You can change the headers and body (also parameters) of HTTP requests before they are sent. The user has the following options, when capturing a request modification:
   * URL specification based on the URL-Pattern-Form
   * Method: The Request Type that should be blocked can be GET, POST, PUT, DELETE, or PATCH.
   * Reduction function: This is a low-code option. Here, the user is offered a JS text field where a function must be specified to modify the request.

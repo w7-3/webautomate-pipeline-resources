@@ -11,7 +11,7 @@ The projects page is made up of the following elements:
     - Actions
     - And so on...
 - A filter button to select columns to display in the table
-- A switch, to either show or hide archived projects
+- Switch to either show or hide archived projects
 
 Every project row in the table has besides the configured columns, the following actions:
 
@@ -98,7 +98,7 @@ Back to the project overview tab. Clicking on a build row will open a summary of
     - Number of successful screenshots
     - Number of failed screenshots
 
-At the bottom of the build summary, there is a button labelled "To Build Report". Clicking on it will take you to the build report page.
+At the bottom of the build summary, there is a button labeled "To Build Report". Clicking on it will take you to the build report page.
 The build report page is made up of the following elements:
 
 - A CTA button (top right) to build the project
@@ -118,8 +118,8 @@ The build report page is made up of the following elements:
     - Link to open the project Reviewer
     - A dropdown menu of all qualified URLs in the build
     - An error notification if the build failed
-    - For every active URL in the dropdown menu, 3 tabs are displayed (which reloads when the URL is changed):
-        - Solution specific report
+    - For every active URL in the dropdown menu, three tabs are displayed (which reloads when the URL is changed):
+        - Solution-specific report
         - Page Load Report: displays the page load overview. The page load report contains the following elements: 
             - The URL in the browsers address bar
             - Result of the page load

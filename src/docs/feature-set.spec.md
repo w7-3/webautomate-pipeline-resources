@@ -23,14 +23,14 @@ The standard layout of the application consists of the following sections:
         - LoginPage: if not logged in, clicking on it will take you to the login page.
         - Create Account: if not logged in, clicking on it will take you to the registration page.
         - Settings: clicking on it will show a modal with the user settings. The following options are available:
-            - Your Preferred Language: allows you to select your preferred language.
+            - Your Preferred Language allows you to select your preferred language.
             - Font Size: allows you to set the font size of the application.
             - Theme: allows you to select the theme of the application.
             - Accent Color: allows you to select the accent color of the application.
             - Enter Fullscreen Mode: allows you to enter fullscreen mode.
         - Logout: allows you to log out of the application.
         - Account: clicking on it will take you to the account page, where you can view and edit your account information.
-        - Projects: clicking on it will take you to the projects page, where you can view and manage your projects.
+        - Projects: clicking on it will take you to the project page, where you can view and manage your projects.
     
 - Click on the logo to go back to the home page
 

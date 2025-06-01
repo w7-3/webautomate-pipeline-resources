@@ -4,13 +4,13 @@
 With the URL-Challenge, you can test the performance and quality of URLs on your website. Ensure your URLs meet requirements and fulfill user expectations.
 The URL-Challenge can be run on a single URL or multiple URLs. It will test the URLs for performance, accessibility, and SEO. The results will be displayed in a detailed report, which will help you identify issues and improve the quality of your URLs.
 The URL-Challenge can be run manually or automated using our API. This allows you to test your URLs regularly and ensure they meet the required standards.
-The URL-Challenge can be a self-written test (in JavaScript) or an AI prompt test (for example: "There are always 15 products on the page" or "The add to cart label is at least 10px away from the Icon").
+The URL-Challenge can be a self-written test (in JavaScript) or an AI prompt test (for example, "There are always 15 products on the page" or "The add to cart label is at least 10 px away from the Icon").
 
 Example usages:
 
 * Validate the functionality and reliability of web pages.
-* During migration or redesign projects, run the URL-Challenge to ensure that new pages meet the same standards as the old ones. With this migration or redesign bugs can be identified and fixed before they go live.
-* Run the URL-Challenge on a regular basis to monitor the performance and quality of your URLs. This will help you identify issues early and improve the user experience.
+* During migration or redesign projects, run the URL-Challenge to ensure that new pages meet the same standards as the old ones. With this migration or redesign, bugs can be identified and fixed before they go live.
+* Run the URL-Challenge regularly to monitor the performance and quality of your URLs. This will help you identify issues early and improve the user experience.
 * Automate quality assurance tasks across a large set of URLs.
 
 ## Data-Extraction: dataExtractions
@@ -42,12 +42,12 @@ Example usages:
 * Detect visual changes between builds or across environments.
 * Monitor the appearance of your website across different devices and browsers.
 * Automate UI validation across responsive breakpoints or themes.
-* Ensure that recent code changes haven’t visually broken key UI components.
+* Ensure that recent code changes haven’t visually broken key UI parts.
 * Review UI diffs using AI or manually.
 
 ## Screenshot Documentation: screenshots
-Easily capture screenshots of your web pages to document their current state. A useful tool for troubleshooting and documenting design versions.
-This feature can also be deployed, when users want to perform some actions on the website and document the results.
+Capture screenshots of your web pages to document their current state. A useful tool for troubleshooting and documenting design versions.
+This feature can also be deployed when users want to perform some actions on the website and document the results.
 
 Example usages:
 

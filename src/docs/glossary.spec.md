@@ -10,4 +10,4 @@ When checking the actionability of elements, the following happens:
 
 **The Solution Configuration**
 
-A Solution Configuration are settings required to run a solution.  
+A Solution Configuration settings required to run a solution.  

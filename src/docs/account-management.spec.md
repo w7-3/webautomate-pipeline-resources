@@ -5,9 +5,9 @@ In the webautomate.app the following roles exist:
 3. Editor
 4. Viewer
 
-When creating an account, an organisation has to be specified. The creator of an account has the eternal role “Account Holder”. The account holder role cannot be changed and cannot be removed.
+When creating an account, an organization has to be specified. The creator of an account has the eternal role of “Account Holder.” The account holder role cannot be changed and cannot be removed.
 
-Other possible roles can be summarised as follows
+Other possible roles can be summarized as follows
 
 1. Account holder: the account creator with the following rights
     1. Can do everything
@@ -26,9 +26,9 @@ After creating an account, the account holder can:
 2. Remove user
 3. Delete collaborators
 
-When a user accepts an invitation (creates an account), they become “collaborators” and are automatically part of the organisation.
+When a user accepts an invitation (creates an account), they become “collaborators” and are automatically part of the organization.
 
-If a collaborator is deleted, on next login, they will be prompted to either delete their account, create their own organisation or request from an admin to add them in an existing organisation.
+If a collaborator is deleted, on next login, they will be prompted to either delete their account, create their own organization or request from an admin to add them in an existing organisation.
 
 Full table of rights:
 
